@@ -1,0 +1,41 @@
+
+#av5_pages-title-area .rwmb-field{
+    margin: 20px 0;
+}
+
+#av5_pages-title-area .ui-widget-header{
+    background: #007db9;
+}
+#av5_pages-title-area select{
+    width:100%;
+}
+
+#av5_pages-title-area .inside{
+        padding: 10px 30px;
+        margin:0;
+}
+label[for="av5_pages-title-area-override"]{
+    font-size:16px;
+    font-weight:bold;
+    padding-bottom:20px;
+}
+
+
+/* =5th Avenue Checkbox
+-------------------------------------------------------------- */
+
+#av5_pages-title-area p.description, 
+#av5_pages-title-area .rwmb-checkbox-wrapper .description {
+    display: inline;
+    color: #8a8a8a;
+    font-style: italic;
+}
+
+/*--------------------------------------------------------------
+# IMAGE SELECT 
+--------------------------------------------------------------*/
+#post-sidebar-f-listing .rwmb-image-select {
+    width: 240px;
+    height: 140px;
+    margin:12px;
+}

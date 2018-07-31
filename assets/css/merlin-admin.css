@@ -1,0 +1,186 @@
+a {
+    color: #414141;
+}
+a:active, a:hover {
+    color: #000;
+}
+.wp-person a:focus .gravatar, a:focus, a:focus .media-icon img {
+    color: #414141;
+    box-shadow: none;
+}
+.return-to-dashboard:hover {
+    color: #414141;
+}
+.merlin__drawer--import-content .checkbox:checked+label i {
+    background-color: #d6ba9c;
+    border-color: #d6ba9c;
+}
+.merlin__drawer--import-content label:hover i {
+    border-color: #d6ba9c;
+}
+.merlin__drawer--import-content label i:before,
+.merlin__drawer--import-content label i:after {
+    background: #d6ba9c;
+}
+.merlin__drawer--import-content li:hover span {
+    color: #c2a47d;
+}
+.merlin__body{
+    background: #f7f7f7;
+    border: 20px solid #ffffff;
+}
+.merlin__content{
+    -webkit-box-shadow: 0 9px 60px -15px rgba(0,0,0,.07);
+    box-shadow: 0 9px 60px -15px rgba(0,0,0,.07);
+    border-radius: 0;
+}
+.merlin__content--welcome .merlin__button--next{
+    position: initial;
+    padding: 9px 58px 10px;
+}
+
+.merlin__button--blue,
+.merlin__button--next{
+    -webkit-transition: all 300ms ease-in-out 0s;
+    transition: all 300ms ease-in-out 0s;
+    color: #ffffff;
+    background: #d5ba9c;
+}
+.merlin__button--blue:active, .merlin__button--blue:hover, .merlin__button--blue:focus,
+.merlin__button--next:active, .merlin__button--next:hover, .merlin__button--next:focus{
+    color: #ffffff;
+    background: #d5ba9c;
+    transform: translateY(-3px);
+    -webkit-transform: translateY(-3px);
+    -webkit-box-shadow: 0 15px 45px 0px rgba(213,186,156,0.41);
+    -moz-box-shadow: 0 15px 45px 0px rgba(213,186,156,0.41);
+    box-shadow: 0 15px 45px 0px rgba(213,186,156,0.41);
+}
+.merlin__button{
+    border-radius: 2px;
+}
+.merlin__content--welcome .merlin__button--skip{
+    display:none;
+}
+
+.merlin__content--welcome .merlin__content__footer{
+    padding-top: 0;
+}
+.merlin__drawer--open .merlin__button--next,
+.merlin__button--next.merlin__button--colorchange {
+    -webkit-animation: none;
+    animation: none;
+}
+.dots li.done {
+    background: #d6ba9c
+}
+.merlin-spinner-line--4,
+.merlin-spinner-line--3,
+.merlin-spinner-line--2,
+.merlin-spinner-line--1{
+    border-color: #ffffff;
+}
+@-webkit-keyframes sonarEffect {
+	0% {
+		opacity: 1;
+	}
+	40% {
+		-webkit-box-shadow: 0 0 0 1px #4a4a4a;
+		box-shadow: 0 0 0 1px #4a4a4a;
+		opacity: 0.5;
+	}
+	100% {
+		-webkit-box-shadow: 0 0 0 1px #4a4a4a;
+		box-shadow: 0 0 0 1px #4a4a4a;
+		opacity: 0;
+		-webkit-transform: scale(1.6);
+		transform: scale(1.6);
+	}
+}
+
+@keyframes sonarEffect {
+	0% {
+		opacity: 1;
+	}
+	40% {
+		-webkit-box-shadow: 0 0 0 1px #4a4a4a;
+		box-shadow: 0 0 0 1px #4a4a4a;
+		opacity: 0.5;
+	}
+	100% {
+		-webkit-box-shadow: 0 0 0 1px #4a4a4a;
+		box-shadow: 0 0 0 1px #4a4a4a;
+		opacity: 0;
+		-webkit-transform: scale(1.6);
+		transform: scale(1.6);
+	}
+}
+
+@-webkit-keyframes popIn {
+	0% {
+		background: #4a4a4a;
+	}
+	40% {
+	}
+	55% {
+		background: #4a4a4a;
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+	65% {
+		background: #4a4a4a;
+		-webkit-transform: scale(1.6);
+		transform: scale(1.6);
+	}
+	85% {
+		background: #4a4a4a;
+		-webkit-transform: scale(0.8);
+		transform: scale(0.8);
+	}
+	95% {
+		background: #4a4a4a;
+		-webkit-transform: scale(1.2);
+		transform: scale(1.2);
+	}
+	100% {
+		background: #4a4a4a;
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+}
+
+@keyframes popIn {
+	0% {
+		background: #4a4a4a;
+	}
+	40% {
+	}
+	55% {
+		background: #4a4a4a;
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+	65% {
+		background: #4a4a4a;
+		-webkit-transform: scale(1.6);
+		transform: scale(1.6);
+	}
+	85% {
+		background: #4a4a4a;
+		-webkit-transform: scale(0.8);
+		transform: scale(0.8);
+	}
+	95% {
+		background: #4a4a4a;
+		-webkit-transform: scale(1.2);
+		transform: scale(1.2);
+	}
+	100% {
+		background: #4a4a4a;
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+}
+.merlin__drawer--import-content__list-item[data-content="after_import"]{
+    display: none!important;
+}

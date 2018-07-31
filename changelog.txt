@@ -1,0 +1,18 @@
+Version 1.0.1 - 26.07.2018
+
+	Fixed: Sticky product descripiotn in FF
+	Fixed: Equal height for carousel with shadow hover style in FF
+	Fixed: "Added to cart" appear  for sticky product
+	Fixed: Customizer option menu text color doesn't show changes in live preview.
+	Fixed: Customizer option for drop down background and underline color
+	Fixed: Wishlist button and header drop down css adjustments
+	Fixed: Rounded buttons and checboxes on iOS
+	Fixed: Menu arrows doesn't open menu on iOS
+	Fixed: Unable to close modal windows on iOS
+	Fixed: Shop page wrong columns amount for first row on ipad
+	Fixed: Shrinked grid banner in FF
+	Fixed: "Always show Frame on top of the page" option
+	Fixed: issue with grid images when disabled carousel
+	Added: dynamic options text for WPMPL 
+	Added: Sticky header Height option
+	Added: touch event for modals and slideout for better usability on iOS

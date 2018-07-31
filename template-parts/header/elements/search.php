@@ -1,0 +1,117 @@
+<?php
+/**
+ * 5th-Avenue header search
+ *
+ * @package 5th-Avenue
+ * @version 1.0.0
+ * @author lifeis.design
+ */
+
+defined( 'ABSPATH' ) || exit;
+
+?>
+<div class="header-item search header__item__search--<?php echo esc_attr( av5_get_option( 'header-search-type' ) ); ?> <?php echo esc_attr( av5_get_option( 'header-search-hover' ) ); ?>" <?php if ( 'fullscreen-search' == av5_get_option( 'header-search-type' ) ) { ?> data-av5-overlay="#fullscreen-search" <?php } ?>>
+	<i  class="icon-5ave-search-3 header-icon"></i>
+	<?php if ( 'dd-search' == av5_get_option( 'header-search-type' ) && 'icon-search' == av5_get_option( 'header-search-icon-type' ) ) { ?>
+		<div id="av5-search-drop"  style="display:none;">
+			<form method="GET" class="ajax-search-form" action="<?php echo esc_url( home_url() ); ?>/">
+				<!-- Search Input -->
+				<div class="drop-search-wrap">
+					<div class="drop-search-input-wrap">
+						<input  class="av5-search-input" type="text" name="s" placeholder="<?php esc_attr_e( 'Type here to Search', '5th-avenue' ); ?>" autocomplete="off">
+					</div>
+					<button type="submit" class="search-submit"><i class="icon-5ave-search-3"></i></button>
+					<?php if ( 'product' === av5_get_option( 'header-search-product' ) ) { ?>
+						<input type="hidden" name="post_type" value="product">
+					<?php } else { ?>
+						<input type="hidden" name="post_type" value="" />
+					<?php } ?>
+				</div>
+			</form>
+		</div>
+		<?php
+}
+if ( 'dd-search-m' == av5_get_option( 'header-search-type' ) && 'icon-search' == av5_get_option( 'header-search-icon-type' ) ) {
+		?>
+		<div id="av5-search-drop" class="av5-minimal-form" style="display:none;">
+			<form method="GET" class="ajax-search-form" action="<?php echo esc_url( home_url() ); ?>/">
+				<input  class="av5-search-input" type="text" name="s" placeholder="<?php esc_attr_e( 'Type and hit Enter', '5th-avenue' ); ?>" autocomplete="off">
+				<?php if ( 'product' === av5_get_option( 'header-search-product' ) ) { ?>
+					<input type="hidden" name="post_type" value="product">
+				<?php } else { ?>
+					<input type="hidden" name="post_type" value="" />
+				<?php } ?>
+			</form>
+		</div>
+	<?php } ?>
+	<?php
+	if ( 'fullscreen-search' == av5_get_option( 'header-search-type' ) && 'icon-search' == av5_get_option( 'header-search-icon-type' ) ) {
+		?>	
+		<!-- close button -->
+		<div  class="av5-overlay-close"><i class="ss-delete"></i></div>
+		<div id="fullscreen-search" class="av5-fullscreen-search" style="display:none;">
+
+
+			<div class="search-wrap" data-ajaxurl="">
+				<div class="av5-search-bar">
+					<form method="GET" class="ajax-search-form" action="<?php echo esc_url( home_url() ); ?>/">
+						<?php if ( 'product' === av5_get_option( 'header-search-product' ) && av5_get_option( 'header-search-product-cats' ) ) : ?>
+							<?php $cats = get_terms( array( 'taxonomy' => 'product_cat', 'hierarchical' => false ) ); ?>
+							<?php if ( $cats && ! is_wp_error( $cats ) ) : ?>
+								<div class="product-cats">
+									<label>
+										<input type="radio" name="product_cat" value="" checked="checked">
+										<span class="line-hover"><?php esc_html_e( 'All Categories', '5th-avenue' ) ?></span>
+									</label>
+
+									<?php foreach ( $cats as $cat ) : ?>
+										<label>
+											<input type="radio" name="product_cat" value="<?php echo esc_attr( $cat->slug ); ?>">
+											<span class="line-hover"><?php echo esc_html( $cat->name ); ?></span>
+										</label>
+									<?php endforeach; ?>
+								</div>
+							<?php endif; ?>                                                
+						<?php endif; ?>
+						<!--Search Icon -->
+						<button type="submit" class="search-submit"><i class="icon-5ave-search-3"></i></button>
+						<!-- Search Input -->
+						<input  class="av5-search-input" type="text" name="s" placeholder="<?php esc_attr_e( 'Type here to Search', '5th-avenue' ); ?>" autocomplete="off">
+						<?php if ( 'product' === av5_get_option( 'header-search-product' ) ) { ?>
+							<input type="hidden" name="post_type" value="product">
+						<?php } else { ?>
+							<input type="hidden" name="post_type" value="" />
+						<?php } ?>
+					</form>
+				</div>
+			</div>
+		</div>
+	<?php } // End if(). ?>
+
+	<?php
+	if ( 'search-slideout' == av5_get_option( 'header-search-type' ) && 'icon-search' == av5_get_option( 'header-search-icon-type' ) ) {
+		?>	
+		<!-- close button -->
+
+		<div id="slideout-search" class="av5-search-slideout" style="display:none;">
+			<span class="big_cross_icon slideout_close"></span>
+			<div class="search-wrap" data-ajaxurl="">
+				<div class="av5-search-bar">
+					<form method="GET" class="ajax-search-form" action="<?php echo esc_url( home_url() ); ?>/">
+						<!-- Search Input -->
+						<input  class="av5-search-input" type="text" name="s" placeholder="<?php esc_attr_e( 'Type here to Search', '5th-avenue' ); ?>" autocomplete="off">
+						<i class="icon-5ave-search-3"></i>
+						<button type="submit" class="search-submit"><?php esc_attr_e( 'Search', '5th-avenue' ); ?></button>
+						<?php if ( 'product' === av5_get_option( 'header-search-product' ) ) { ?>
+							<input type="hidden" name="post_type" value="product">
+						<?php } else { ?>
+							<input type="hidden" name="post_type" value="" />
+						<?php } ?>
+					</form>
+				</div>
+			</div>
+		</div>
+	<?php } ?>
+</div>
+
+

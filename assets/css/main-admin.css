@@ -1,0 +1,217 @@
+#woocommerce-product-loop-images .inside
+{
+    margin:0;
+    padding:0
+}
+#woocommerce-product-loop-images .inside .add_product_loop_images
+{
+    padding:0 12px 12px
+}
+#woocommerce-product-loop-images .inside #product_loop_images_container
+{
+    padding:0 0 0 9px
+}
+#woocommerce-product-loop-images .inside #product_loop_images_container ul
+{
+    margin:0;
+    padding:0
+}
+#woocommerce-product-loop-images .inside #product_loop_images_container ul::after,
+#woocommerce-product-loop-images .inside #product_loop_images_container ul::before
+{
+    content:' ';
+    display:table
+}
+#woocommerce-product-loop-images .inside #product_loop_images_container ul::after
+{
+    clear:both
+}
+#woocommerce-product-loop-images .inside #product_loop_images_container ul li.add,
+#woocommerce-product-loop-images .inside #product_loop_images_container ul li.image,
+#woocommerce-product-loop-images .inside #product_loop_images_container ul li.wc-metabox-sortable-placeholder
+{
+    width:80px;
+    float:left;
+    cursor:move;
+    border:1px solid #d5d5d5;
+    margin:9px 9px 0 0;
+    background:#f7f7f7;
+    border-radius:2px;
+    position:relative;
+    box-sizing:border-box
+}
+#woocommerce-product-loop-images .inside #product_loop_images_container ul li.add img,
+#woocommerce-product-loop-images .inside #product_loop_images_container ul li.image img,
+#woocommerce-product-loop-images .inside #product_loop_images_container ul li.wc-metabox-sortable-placeholder img
+{
+    width:100%;
+    height:auto;
+    display:block
+}
+#woocommerce-product-loop-images .inside #product_loop_images_container ul li.wc-metabox-sortable-placeholder
+{
+    border:3px dashed #ddd;
+    position:relative
+}
+#woocommerce-product-loop-images .inside #product_loop_images_container ul li.wc-metabox-sortable-placeholder::after
+{
+    font-family:Dashicons;
+    speak:none;
+    font-weight:400;
+    font-variant:normal;
+    text-transform:none;
+    line-height:1;
+    -webkit-font-smoothing:antialiased;
+    margin:0;
+    text-indent:0;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    text-align:center;
+    content:"";
+    font-size:2.618em;
+    line-height:72px;
+    color:#ddd
+}
+#woocommerce-product-loop-images .inside #product_loop_images_container ul ul.actions
+{
+    position:absolute;
+    top:-8px;
+    right:-8px;
+    padding:2px;
+    display:none
+}
+#woocommerce-product-loop-images .inside #product_loop_images_container ul ul.actions li
+{
+    float:right;
+    margin:0 0 0 2px
+}
+#woocommerce-product-loop-images .inside #product_loop_images_container ul ul.actions li a
+{
+    width:1em;
+    height:1em;
+    margin:0;
+    height:0;
+    display:block;
+    overflow:hidden
+}
+#woocommerce-product-loop-images .inside #product_loop_images_container ul ul.actions li a.tips
+{
+    cursor:pointer
+}
+#woocommerce-product-loop-images .inside #product_loop_images_container ul ul.actions li a.delete
+{
+    display:block;
+    text-indent:-9999px;
+    position:relative;
+    height:1em;
+    width:1em;
+    font-size:1.4em
+}
+#woocommerce-product-loop-images .inside #product_loop_images_container ul ul.actions li a.delete::before
+{
+    font-family:Dashicons;
+    speak:none;
+    font-weight:400;
+    font-variant:normal;
+    text-transform:none;
+    line-height:1;
+    -webkit-font-smoothing:antialiased;
+    margin:0;
+    text-indent:0;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    text-align:center;
+    content:"";
+    color:#999;
+    background:#fff;
+    border-radius:50%;
+    height:1em;
+    width:1em;
+    line-height:1em
+}
+#woocommerce-product-loop-images .inside #product_loop_images_container ul ul.actions li a.delete:hover::before
+{
+    color:#a00
+}
+#woocommerce-product-loop-images .inside #product_loop_images_container ul li:hover ul.actions
+{
+    display:block
+}
+
+.vc_element-icon.av5_vc_dropcap-icon {
+    background-image: url(../img/vc/av5_dropcap-icon.svg);
+}
+.vc_element-icon.av5_vc_video-icon {
+    background-image: url(../img/vc/av5_video-icon.svg);
+}
+.vc_element-icon.av5_vc_blog-icon {
+    background-image: url(../img/vc/av5_blog-icon.svg);
+}
+.vc_element-icon[data-is-container=true].av5_vc_parallax-icon,
+.vc_element-icon.av5_vc_parallax-icon {
+    background-image: url(../img/vc/av5_parallax-icon.svg);
+    background-position: 0 0;
+}
+.vc_element-icon.av5_vc_banner-icon {
+    background-image: url(../img/vc/av5_banner-icon.svg);
+}
+.vc_element-icon.av5_vc_vertical-icon {
+    background-image: url(../img/vc/av5_vertical-icon.svg);
+}
+.vc_element-icon.av5_vc_social-icon {
+    background-image: url(../img/vc/av5_social-icon.svg);
+}
+.vc_element-icon.av5_vc_animated-text-icon {
+    background-image: url(../img/vc/av5_animated-text-icon.svg);
+}
+.vc_element-icon.av5_vc_button-icon {
+    background-image: url(../img/vc/av5_button-icon.svg);
+}
+.vc_element-icon[data-is-container=true].av5_vc_carousel-icon,
+.vc_element-icon.av5_vc_carousel-icon {
+    background-image: url(../img/vc/av5_carousel-icon.svg);
+    background-position: 0 0;
+}
+
+.woocommerce table.form-table textarea.wp-editor-area{
+    width:100%;
+}
+.rwmb-switch-label--rounded, .rwmb-switch-label--rounded .rwmb-switch-slider{
+    max-width: 40px;
+}
+
+.va-admin__warning-text{
+    font-weight: bold;
+    font-size: 15px;
+}
+.va-admin__warning-text > span{
+    color:red;
+}
+/* welcome screen */
+.av5-admin-welcome{
+    max-width: 500px;
+    margin: 10% auto;
+    text-align: center;
+}
+.av5-admin-welcome h1,
+.av5-admin-welcome h3{
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+.av5-admin-welcome .button.av5-install{
+    color: #fff;
+    background: #67b700;
+    padding: 20px;
+    font-weight: 500;
+    vertical-align: middle;
+    line-height: 0;
+    box-shadow: 0 2px 0 #4e8807;
+    border-color: #4e880766;
+    margin-bottom: 15px;
+}

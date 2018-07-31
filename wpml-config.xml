@@ -1,0 +1,18 @@
+<wpml-config>
+	<admin-texts>
+		<key name="lid_av5">
+			<key name="blog-listing-readmore-text"/>
+			<key name="footer-newsletter-title"/>
+			<key name="header-burger-menu-text"/>
+			<key name="header-cart-promo-text"/>
+			<key name="header-cart-text"/>
+			<key name="page-titlearea-text-above"/>
+			<key name="posts-titlearea-text-above"/>
+			<key name="product-pages-size-guide-link-text"/>
+			<key name="products-titlearea-text-above"/>
+			<key name="shop-page-products-max-width"/>
+			<key name="shop-page-quickview-text"/>
+		</key>
+		
+	</admin-texts>
+</wpml-config>

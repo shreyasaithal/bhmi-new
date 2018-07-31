@@ -1,0 +1,20 @@
+{
+	"admin_pages": [
+		"toplevel_page__lid_options"
+	],
+	"options": {
+		"lid_av5": {
+			"blog-listing-readmore-text": {},
+			"footer-newsletter-title": {},
+			"header-burger-menu-text": {},
+			"header-cart-promo-text": {},
+			"header-cart-text": {},
+			"page-titlearea-text-above": {},
+			"posts-titlearea-text-above": {},
+			"product-pages-size-guide-link-text": {},
+			"products-titlearea-text-above": {},
+			"shop-page-products-max-width": {},
+			"shop-page-quickview-text": {}
+		}
+	}
+}
